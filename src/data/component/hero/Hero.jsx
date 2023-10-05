@@ -1,6 +1,6 @@
 import React from 'react'
 import "./Hero.css"
-import Header from '../Header/Header'
+// import Header from '../Header/Header'
 import heart from "../../../assets/heart.png"
 import hero_image from "../../../assets/hero_image.png"
 import hero_back from "../../../assets/hero_image_back.png"
@@ -11,8 +11,9 @@ const Hero = () => {
     return (
         <>
             <div className="hero">
+            <div className="blur hero-b"></div>
                 <div className="left-h">
-                    <Header />
+                    {/* <Header /> */}
                     {/* ======================================================= */}
                     <div className="the-best-ad">
                         <div></div>

@@ -3,29 +3,32 @@
     display: flex;
     gap: 1rem;
     padding: 1rem 2rem;
-    margin-bottom: 20px;
+    min-height: 70vh;
 }
 
 .left-t {
     display: flex;
-    flex: 1 1;
+    flex: 1                             1;
     gap: 1.5rem;
     flex-direction: column;
     text-transform: uppercase;
     color: white;
 }
-.left-t>h1{
+
+.left-t>h1 {
     color: var(--orange);
     font-size: 20px;
 }
-.left-t>h2{
+
+.left-t>h2 {
     color: white;
     font-size: 2.5rem;
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
 }
-.left-t>h3{
+
+.left-t>h3 {
     font-size: 16px;
     font-weight: 500;
     letter-spacing: 2px;
@@ -33,7 +36,8 @@
     text-transform: none;
     line-height: 40px;
 }
-.left-t p{
+
+.left-t p {
     font-weight: 700;
 }
 
@@ -50,7 +54,7 @@
 }
 
 
-.right-t>img{
+.right-t>img {
     position: relative;
     position: absolute;
     right: 8rem;
@@ -60,7 +64,7 @@
 
 }
 
-.right-t .imgback1{
+.right-t .imgback1 {
     position: absolute;
     right: 9rem;
     top: 1rem;
@@ -68,7 +72,8 @@
     width: 18rem;
     border: 2px solid var(--orange);
 }
-.right-t .imgback2{
+
+.right-t .imgback2 {
     position: absolute;
     right: 7rem;
     top: 3rem;
@@ -77,15 +82,211 @@
     background: var(--planCard);
 }
 
-.arrows{
+.arrows {
     display: flex;
     gap: 1rem;
     position: absolute;
     right: 29rem;
-    bottom: -1.4rem;
+    bottom: 3rem;
 }
 
-.arrows img{
+.arrows img {
     width: 2rem;
-    cursor: pointer;    
+    cursor: pointer;
+}
+
+
+
+@media (max-width:1150px) {
+
+    .right-t>img {
+        right: 5rem;
+        top: 2rem;
+        height: 20rem;
+        width: 16rem;
+
+    }
+
+    .right-t .imgback1 {
+        right: 6rem;
+        height: 20rem;
+        width: 16rem;
+    }
+
+    .right-t .imgback2 {
+        right: 4rem;
+        top: 3rem;
+        height: 20rem;
+        width: 16rem;
+    }
+
+    .arrows {
+        gap: 1rem;
+        right: 24rem;
+        bottom: 3rem;
+    }
+
+    .arrows img {
+        width: 1.6rem;
+        cursor: pointer;
+    }
+}
+
+@media (max-width:950px) {
+    .right-t>img {
+        right: 3rem;
+        top: 4rem;
+        height: 18rem;
+        width: 14rem;
+
+    }
+
+    .right-t .imgback1 {
+        top: 3rem;
+        right: 4rem;
+        height: 18rem;
+        width: 14rem;
+    }
+
+    .right-t .imgback2 {
+        right: 2rem;
+        top: 5rem;
+        height: 18rem;
+        width: 14rem;
+    }
+
+    .arrows {
+
+        right: 19rem;
+        bottom: 3rem;
+    }
+
+    .arrows img {
+        width: 1.6rem;
+        cursor: pointer;
+    }
+
+    .left-t>h3 {
+
+        letter-spacing: 2px;
+        line-height: 30px;
+    }
+}
+
+@media (max-width:750px) {
+
+    .testimonial {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        height: auto;
+    }
+
+    .right-t {
+        padding: 30px;
+        flex: none;
+        position: relative;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .right-t>img {
+        top: 0%;
+        left: 10%;
+        position: relative;
+        height: 20rem;
+        width: 18rem;
+
+    }
+
+    .right-t .imgback1 {
+        top: 0rem;
+        left: 31.5%;
+        height: 20rem;
+        width: 18rem;
+    }
+
+    .right-t .imgback2 {
+
+        left: 40.5%;
+        top: 3.5rem;
+        height: 20rem;
+        width: 18rem;
+    }
+
+    .arrows {
+
+        left: 10%;
+        bottom: 3rem;
+    }
+}
+
+
+@media (max-width:600px) {
+    .right-t>img {
+        left: 0px;
+        top: 0px;
+        height: 20rem;
+        width: 16rem;
+
+    }
+
+    .right-t .imgback1 {
+        display: none;
+
+    }
+
+    .right-t .imgback2 {
+        display: none;
+    }
+    .left-t>h1 {
+        font-size: 18px;
+    }
+    
+    .left-t>h2 {
+        font-size: 2.2rem;
+     
+    }
+    
+    .left-t>h3 {
+        font-size: 16px;
+        font-weight: 500;
+        letter-spacing: 1px;
+        line-height: 26px;
+
+    }
+}
+
+@media (max-width:400px) {
+    .right-t>img {
+        left: 0px;
+        top: 0px;
+        height: 18rem;
+        width: 14rem;
+
+    }
+    .left-t>h1 {
+        font-size: 15px;
+    }
+    
+    .left-t>h2 {
+        font-size: 2rem;
+     
+    }
+    
+    .left-t>h3 {
+        font-size: 16px;
+        font-weight: 500;
+        letter-spacing: 0px;
+        line-height: 26px;
+
+    }
+    .testimonial {
+    
+        gap: 1rem;
+        padding: 1rem 1.5rem;
+       
+    }
 }

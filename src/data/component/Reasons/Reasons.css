@@ -103,3 +103,189 @@
 .partners img {
     width: 3rem;
 }
+
+
+
+
+
+
+
+@media (max-width:1200px) {
+    .list {
+        gap: 0.7rem;
+    }
+
+    .list img {
+        width: 1.6rem;
+    }
+
+    .list span {
+        font-size: 16px;
+        text-transform: uppercase;
+        color: white;
+        font-weight: 500;
+    }
+
+    .reasons {
+        gap: 2rem;
+        padding: 10px 2rem;
+
+    }
+}
+
+@media (max-width:1050px) {
+    .reasons {
+        padding: 10px 3rem;
+        display: flex;
+        flex-direction: column-reverse;
+
+    }
+
+    .right-r>h1 {
+        font-size: 1.8rem;
+    }
+
+    .right-r>p {
+        font-size: 3.4rem;
+    }
+
+
+
+    .list {
+        gap: 3rem;
+        margin: 20px 0px;
+    }
+
+    .list img {
+        width: 2.6rem;
+    }
+
+    .list span {
+        font-size: 20px;
+        text-transform: uppercase;
+    }
+
+    .line p {
+        font-size: 20px;
+
+    }
+
+    .partners {
+        gap: 4rem;
+        display: flex;
+    }
+
+    .partners img {
+        width: 3.5rem;
+    }
+
+
+    .lift-r {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+
+    .lift-r>:nth-child(1),
+    .lift-r>:nth-child(2),
+    .lift-r>:nth-child(3),
+    .lift-r>:nth-child(4) {
+        width: 48%;
+        height: 25rem;
+    }
+
+}
+
+
+@media (max-width:800px) {
+    .reasons {
+        padding: 10px 2rem;
+
+    }
+
+    .lift-r>:nth-child(1),
+    .lift-r>:nth-child(2),
+    .lift-r>:nth-child(3),
+    .lift-r>:nth-child(4) {
+        width: 48%;
+        height: 17rem;
+    }
+
+}
+
+@media (max-width:600px) {
+    .reasons {
+        padding: 10px 1.5rem;
+
+    }
+
+    .lift-r>:nth-child(1),
+    .lift-r>:nth-child(2),
+    .lift-r>:nth-child(3),
+    .lift-r>:nth-child(4) {
+        width: 98%;
+        height: 14rem;
+    }
+
+    .list {
+        gap: 1rem;
+    }
+
+    .list img {
+        width: 1.5rem;
+    }
+
+    .list span {
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    .line p {
+        font-size: 18px;
+        text-transform: uppercase;
+        color: var(--gray);
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+
+    .partners {
+        gap: 1rem;
+        display: flex;
+    }
+
+    .partners img {
+        width: 3rem;
+    }
+
+    .right-r>h1 {
+
+        font-size: 1.6rem;
+    }
+
+    .right-r>p {
+        font-size: 2.8rem;
+    }
+}
+
+@media (max-width:600px) {
+    .list img {
+        width: 1.5rem;
+    }
+
+    .list span {
+        font-size: 12px;
+        text-transform: uppercase;
+    }
+
+    .right-r>h1 {
+
+        font-size: 1.4rem;
+    }
+
+    .right-r>p {
+        font-size: 1.8rem;
+    }
+}

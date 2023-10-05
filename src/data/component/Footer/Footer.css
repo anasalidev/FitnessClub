@@ -1,0 +1,15 @@
+.footer-contanier{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+}
+.footer{
+    display: flex;
+    gap: 3rem;
+}
+.footer img{
+    width: 3rem;
+    
+}

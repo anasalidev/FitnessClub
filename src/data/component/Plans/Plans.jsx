@@ -8,6 +8,8 @@ const Plans = () => {
     return (
         <>
             <div className="plans-contanier">
+            <div className="blur plan-b-1"></div>
+            <div className="blur plan-b-2"></div>
                 <div className="program-head">
                     <p className='strong'>ready to start</p>
                     <p className='clr'>your journey</p>

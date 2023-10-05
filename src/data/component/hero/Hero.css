@@ -7,6 +7,7 @@
 .hero {
     display: flex;
     justify-content: space-between;
+    height: fit-content;
 }
 
 .left-h {
@@ -160,7 +161,7 @@
 }
 
 .heart-rate img {
-    width: 2rem;
+    width: 45%;
 }
 
 .heart-rate p {
@@ -205,24 +206,313 @@
     background-color: var(--caloryCard);
     padding: 10px;
     border-radius: 10px;
-    /* width: fit-content; */
     position: absolute;
     top: 31rem;
     right: 32rem;
 }
-.calories img{
-    width: 3.4rem;
+
+.calories img {
+    width: 20%
 }
-.calories p{
+
+.calories p {
     display: flex;
     flex-direction: column;
     font-size: 20px;
     justify-content: space-between;
     text-transform: capitalize;
 }
-.calories p span:nth-child(1){
+
+.calories p span:nth-child(1) {
     color: var(--gray);
 }
-.calories p span:nth-child(2){
+
+.calories p span:nth-child(2) {
     color: white;
+}
+
+.hero-b {
+    width: 20rem;
+    height: 30rem;
+    left: 0%;
+}
+
+
+@media (max-width:1250px) {
+    .left-h {
+        padding: 2rem;
+        flex: 2;
+        gap: 1.5rem;
+    }
+
+    .right-h {
+        flex: 1;
+    }
+
+    .heart-rate {
+        width: fit-content;
+        padding: 10px 5px;
+        top: 7rem;
+        right: 3rem;
+    }
+
+    .hero-imgs {
+        width: 21rem;
+        right: 7rem;
+        z-index: 9;
+
+    }
+
+    .hero-back {
+        width: 13rem;
+        right: 19rem;
+
+    }
+
+    .calories {
+        width: 14rem;
+        gap: 1rem;
+        top: 31rem;
+        right: 25rem;
+    }
+
+}
+
+@media (max-width:1150px) {
+    .right-h .btn {
+        display: none;
+    }
+
+    .hero {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .right-h {
+        background: none;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-imgs {
+        position: relative;
+        left: 50%;
+        width: 45%;
+        top: 50px;
+    }
+
+    .hero-back {
+        position: absolute;
+        width: 18%;
+        left: 47%;
+        top: 60px;
+
+    }
+
+    .heart-rate {
+        width: fit-content;
+        padding: 20px 15px;
+        left: 10%;
+    }
+
+    .calories {
+        position: relative;
+        padding: 20px;
+        width: 22rem;
+        gap: 4rem;
+        top: -5rem;
+        left: -11%;
+    }
+
+
+}
+
+@media (max-width:800px) {
+    .the-best-ad {
+        padding: 14px 10px;
+    }
+
+    .the-best-ad>div {
+        width: 4.4rem;
+        height: 80%;
+    }
+
+    .the-best-ad span {
+        z-index: 2;
+        font-size: 16px;
+    }
+
+    .hero-text h1 {
+        text-transform: uppercase;
+        font-size: 3.4rem;
+        color: white;
+    }
+
+    .hero-text p {
+        text-transform: uppercase;
+        font-size: 1rem;
+        color: white;
+        line-height: 30px;
+    }
+
+    .calories {
+        padding: 10px;
+        width: 16rem;
+        gap: 2rem;
+        top: -3rem;
+        left: -15%;
+    }
+
+    .heart-rate {
+        width: fit-content;
+        padding: 20px 15px;
+        top: 10px;
+        left: 10%;
+    }
+
+    .figures-bx {
+        margin-right: 20px;
+    }
+
+    .figures-bx h4 {
+        color: white;
+        font-size: 1.2rem;
+        font-weight: 400;
+    }
+
+    .figures-bx p {
+        font-size: 0.9rem;
+        color: var(--gray);
+        text-transform: uppercase;
+        padding-top: 7px;
+    }
+
+    .hero-buttons {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .btn {
+        padding: 0.4rem;
+        width: auto;
+        font-size: 12px;
+
+
+    }
+}
+
+@media (max-width:500px) {
+    .the-best-ad {
+        padding: 10px 6px;
+    }
+
+    .the-best-ad>div {
+        width: 3.4rem;
+        height: 80%;
+    }
+
+    .the-best-ad span {
+        z-index: 2;
+        font-size: 12px;
+    }
+
+    .hero-text h1 {
+        text-transform: uppercase;
+        font-size: 2rem;
+        color: white;
+    }
+
+    .hero-text p {
+        font-size: 14px;
+    }
+
+    .calories {
+        padding: 10px;
+        width: 10rem;
+        gap: 1rem;
+        top: -3rem;
+        left: -20%;
+    }
+
+    .heart-rate {
+        width: fit-content;
+        padding: 10px 6px;
+        top: 10px;
+        left: 6%;
+    }
+
+    .calories p {
+        font-size: 14px;
+
+    }
+
+    .heart-rate p span:nth-child(1) {
+        font-size: 12px;
+    }
+
+    .heart-rate p span:nth-child(2) {
+        font-size: 13px;
+    }
+    .figures-bx {
+        margin-right: 10px;
+    }
+
+    .figures-bx h4 {
+        color: white;
+        font-size: 1rem;
+        font-weight: 400;
+    }
+
+    .figures-bx p {
+        font-size: 0.7rem;
+    }
+
+    .hero-buttons {
+        display: flex;
+        gap: 1rem;
+    }
+    .hero-b {
+        width: 10rem;
+        height: 30rem;
+        left: 0%;
+    }
+}
+@media (max-width:300px) {
+    .the-best-ad {
+        padding: 6px 4px;
+    }
+
+    .the-best-ad>div {
+        width: 3.4rem;
+        height: 80%;
+    }
+
+    .the-best-ad span {
+        z-index: 2;
+        font-size: 10px;
+    }
+    .calories {
+        padding: 4px;
+        width:auto;
+        gap: 2rem;
+        top: -3rem;
+        left: -5%;
+    }
+
+    .heart-rate {
+        width: fit-content;
+        padding: 20px 15px;
+        top: 10px;
+        left: 10%;
+    }
+    .left-h {
+        padding: 1rem;
+        padding-top: 1rem;
+        flex: 3;
+        gap: 1rem;
+        display: flex;
+        flex-direction: column;
+    }
 }

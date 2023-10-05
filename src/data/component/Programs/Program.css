@@ -1,66 +1,171 @@
-.program{
+.program {
     display: flex;
     gap: 2rem;
     flex-direction: column;
     padding: 0px 3rem;
 }
-.program-header{
+
+.program-header {
     display: flex;
     gap: 5.5rem;
     justify-content: center;
 }
-.program-header p{
+
+.program-header p {
     text-transform: uppercase;
     font-size: 3.3rem;
     font-weight: bold;
     font-style: italic;
 }
-.st-co{
+
+.st-co {
     color: white;
 }
 
 
 
-.programs-cat{
+.programs-cat {
     display: flex;
     gap: 2rem;
 }
 
-.category{
+.category {
     display: flex;
     flex-direction: column;
     padding: 1.5rem;
     background-color: var(--gray);
     justify-content: space-between;
 }
-.category>:nth-child(1){
+
+.category>:nth-child(1) {
     width: 2rem;
     height: 2rem;
     fill: white;
     margin-bottom: 10px;
 }
-.category h3{
+
+.category h3 {
     color: white;
     font-size: 16px;
     margin-bottom: 10px;
 }
-.category p{
+
+.category p {
     color: white;
     font-size: 14px;
     margin-bottom: 10px;
     line-height: 25px;
 }
-.join-btn p{
+
+.join-btn p {
     display: flex;
     align-items: center;
     gap: 3rem;
     text-transform: capitalize;
 }
-.join-btn p img{
-   width: 1.2rem;
+
+.join-btn p img {
+    width: 1.2rem;
 }
 
-.category:hover{
+.category:hover {
     background: var(--planCard);
     cursor: pointer;
+}
+
+@media (max-width:1330px) {
+    .program {
+        margin: 30px;
+
+    }
+
+    .program-header {
+        gap: 3.5rem;
+    }
+
+    .program-header p {
+        font-size: 2.8rem;
+    }
+}
+
+@media (max-width:1170px) {
+    .App{
+        gap: 1rem;
+    }
+    .program {
+        padding: 0px 1rem;
+    }
+
+    .program-header {
+        gap: 3rem;
+    }
+
+    .program-header p {
+        font-size: 2.4rem;
+    }
+}
+
+@media (max-width:1000px) {
+    .programs-cat {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .category {
+        padding: 1rem;
+    }
+
+    .program-header p {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width:830px) {
+    .program{
+        margin: 10px;
+        padding: 10px;
+    }
+    .programs-cat {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        gap: 1.5rem;
+    }
+    .category {
+        padding: 1.5rem;
+    }
+    .program-header p {
+        font-size: 1.8rem;
+    }
+    .program-header {
+        gap: 1.5rem;
+    }
+
+}
+@media (max-width:600px){
+    .program-header p {
+        font-size: 1.5rem;
+    }
+    .program-header {
+        gap: 1.7rem;
+    }
+}
+@media (max-width:520px){
+    .program-header p {
+        font-size: 2rem;
+    }
+    .program-header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+        text-align: center;
+    }
+    .programs-cat {
+        display: grid;
+        grid-template-columns: repeat(1, auto);
+        gap: 1.5rem;
+    }
+    .category {
+        padding: 1.4rem;
+    }
 }

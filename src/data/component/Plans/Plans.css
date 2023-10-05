@@ -1,4 +1,5 @@
 .program-head {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -12,7 +13,7 @@
 
 .clr {
     color: white;
-  }
+}
 
 
 
@@ -103,8 +104,9 @@
     background: var(--planCard);
     transform: scale(1.1);
 }
-.plan-card:Hover:nth-child(2){
-    background:var(--caloryCard);
+
+.plan-card:Hover:nth-child(2) {
+    background: var(--caloryCard);
     transform: scale(1.0);
 
 }
@@ -116,4 +118,152 @@
 
 .plan-card:nth-child(2) .btn {
     color: var(--orange);
+}
+
+
+.plan-b-1 {
+    width: 32rem;
+    height: 23rem;
+    top: 116rem;
+    left: 0%;
+}
+
+.plan-b-2 {
+    width: 32rem;
+    height: 23rem;
+    top: 116rem;
+    right: 0%;
+}
+
+
+
+
+
+
+@media (max-width:1100px) {
+    .program-head {
+        justify-content: center;
+        gap: 1.5rem;
+        padding: 0px 30px;
+    }
+
+    .program-head p {
+        font-size: 2.3rem;
+    }
+}
+
+@media (max-width:1000px) {
+    .program-head {
+        justify-content: center;
+        gap: 1.5rem;
+        padding: 0px 20px;
+    }
+
+    .program-head p {
+        font-size: 2rem;
+    }
+
+    .plans {
+        flex-wrap: wrap;
+        gap: 4rem;
+        margin: 50px;
+    }
+
+    .plan-card {
+        width: 44%;
+        padding: 30px;
+        background-color: var(--caloryCard);
+        transition: 1s all;
+    }
+
+    .plan-card:nth-child(2) {
+        background: var(--caloryCard);
+        transform: none;
+    }
+
+    .plan-card:nth-child(2)>svg {
+        fill: var(--orange);
+    }
+
+    .plan-card:nth-child(2) .btn {
+        color: var(--planCard);
+    }
+
+
+}
+
+@media (max-width:850px) {
+    .program-head {
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+
+    }
+
+    .program-head p {
+        font-size: 2.5rem;
+    }
+
+    .plans {
+        flex-wrap: wrap;
+        gap: 2rem;
+        margin: 20px;
+
+    }
+
+    .plan-card {
+        width: 44%;
+        padding: 30px;
+        background-color: var(--caloryCard);
+        transition: 1s all;
+    }
+}
+
+@media (max-width:700px) {
+    .plans {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+        margin:30px;
+    }
+
+    .plan-card {
+        width: 85%;
+        padding: 20px;
+        background-color: var(--caloryCard);
+        transition: 1s all;
+    }
+    .plan-b-1 {
+        width: 12rem;
+        height: 8rem;
+        top: 116rem;
+        left: 0%;
+    }
+    
+    .plan-b-2 {
+        width: 12rem;
+        height: 8rem;
+        top: 116rem;
+        right: 0%;
+    }
+    .plans {
+        margin: 0px;
+
+    }
+    .App{
+        gap: 2rem;
+    }
+    .program-head p {
+        font-size: 2rem;
+    }
+    .program-head{
+        margin-bottom: 30px;
+    }
+}
+@media (max-width:700px){
+    .program-head p {
+        font-size: 1.5rem;
+    }
 }
